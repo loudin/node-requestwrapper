@@ -8,6 +8,7 @@ Examples:
 Request = require 'path/to/requestWrapper'
 
 GET Request
+
 	Request.get "http://www.google.com", (err,data) ->
 		#Data is returned in whatever format the request specifies. In this case, HTML
 		#Do things with the data object
@@ -18,6 +19,7 @@ GET Request
 		returnData.access_token...
 
 POST Request
+
 	connectToInstagram = "https://api.instagram.com/oauth/access_token"
 	params = 
 		client_id: "clientId"
