@@ -5,9 +5,9 @@ Really simple request wrapper for http GET and POST requests in Node.js.
 
 Examples:
 
-Request = require 'path/to/requestWrapper'
-
 GET Request
+
+	Request = require 'path/to/requestWrapper'
 
 	Request.get "http://www.google.com", (err,data) ->
 		#Data is returned in whatever format the request specifies. In this case, HTML
@@ -19,6 +19,8 @@ GET Request
 		returnData.access_token...
 
 POST Request
+
+	Request = require 'path/to/requestWrapper'
 
 	connectToInstagram = "https://api.instagram.com/oauth/access_token"
 	params = 
